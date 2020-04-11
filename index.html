@@ -3,30 +3,25 @@
 <script type="text/javascript"> 
 function ChangeIt() 
 {
-    
+var prefix = "https://raw.githubusercontent.com/hollstein/RandomEarthView/gh-pages/"
 var arr = [
-"https://raw.githubusercontent.com/hollstein/RandomEarthView/gh-pages/croped_2000_2000/2020_03_05_00_CLAHE_crop_5017_8776_7017_10776.jpg",
-"https://raw.githubusercontent.com/hollstein/RandomEarthView/gh-pages/croped_2000_2000/2020_03_24_00_CLAHE_crop_8974_7334_10974_9334.jpg",
-"https://raw.githubusercontent.com/hollstein/RandomEarthView/gh-pages/croped_2000_2000/2020_03_05_00_CLAHE_crop_8186_6231_10186_8231.jpg",
-"https://raw.githubusercontent.com/hollstein/RandomEarthView/gh-pages/croped_2000_2000/2020_03_05_00_CLAHE_crop_5017_8776_7017_10776.jpg",
-"https://raw.githubusercontent.com/hollstein/RandomEarthView/gh-pages/croped_2000_2000/2020_03_24_00_CLAHE_crop_7242_7132_9242_9132.jpg",
-"https://raw.githubusercontent.com/hollstein/RandomEarthView/gh-pages/croped_2000_2000/2020_03_24_00_CLAHE_crop_6099_5894_8099_7894.jpg",
-"https://raw.githubusercontent.com/hollstein/RandomEarthView/gh-pages/croped_2000_2000/2020_03_05_00_CLAHE_crop_7742_3107_9742_5107.jpg",
-"https://raw.githubusercontent.com/hollstein/RandomEarthView/gh-pages/croped_2000_2000/2020_03_05_00_CLAHE_crop_7511_1514_9511_3514.jpg",
+    "croped_2000_2000/2020_03_24_00_CLAHE_crop_8974_7334_10974_9334.jpg",
+    "croped_2000_2000/2020_03_05_00_CLAHE_crop_8186_6231_10186_8231.jpg",
+    "croped_2000_2000/2020_03_05_00_CLAHE_crop_5017_8776_7017_10776.jpg",
+    "croped_2000_2000/2020_03_24_00_CLAHE_crop_7242_7132_9242_9132.jpg",
+    "croped_2000_2000/2020_03_24_00_CLAHE_crop_6099_5894_8099_7894.jpg",
+    "croped_2000_2000/2020_03_05_00_CLAHE_crop_7742_3107_9742_5107.jpg",
+    "croped_2000_2000/2020_03_05_00_CLAHE_crop_7511_1514_9511_3514.jpg",
 ]
-    
-    
-document.body.background = arr[Math.floor(Math.random() * arr.length)];
+document.body.background = prefix + arr[Math.floor(Math.random() * arr.length)];
 document.body.style.backgroundRepeat = "repeat";
 }
 </script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+<link href="ribbon.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body> 
-<a href="https://github.com/hollstein/RandomEarthView"><img width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_red_aa0000.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+<div class="ribbon left red"><a href="https://github.com/hollstein/RandomEarthView">Fork me on GitHub</a></div>
+<div class="ribbon right green"><a href="https://hollstein.github.io/RandomEarthView">Reload me!</a></div>
 </body> 
-
 <script type="text/javascript"> ChangeIt(); </script>
-
 </html>
